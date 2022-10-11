@@ -214,16 +214,16 @@ a {
 #about-info .info-right img {
     display: block;
     width: 77%;
-    border-radius: 50%;
+    border-radius: 20px;
     margin: auto;
 }
 
 /* Testimonials */
 #testimonials {
-    height: 800px;
-    background: url("../img/lazce2.jpg") no-repeat;
+    height: 600px;
+    background: url("../img/lazce66-transformedn.jpg");
+
     padding-top: 100px;
-    border: orangered;
 }
 
 #testimonials h2 {
