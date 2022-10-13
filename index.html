@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Media querries</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: gray;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .big {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: capitalize;
+            display: none;
+        }
+
+        /* Smartphone */
+        @media(max-width: 500px) {
+            body {
+                background: red;
+            }
+            #smartphone {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 501px) and (max-width: 768px){
+            body {
+                background: green;
+            }
+            #tablet{
+                display: block;
+            }
+        }
+
+        /* Normal */
+        @media (min-width: 769px) and (max-width: 1200px){
+            body {
+                background: blue;
+            }
+            #normal{
+                display: block;
+            }
+        }
+
+        /* Widescreen */
+        @media (min-width: 1201px) {
+            body {
+                background: black;
+            }
+            #widescreen{
+                display: block;
+            }
+        }
+
+        @media (min-width: 500px) {
+            body {
+                background: orange;
+            }
+            #widescreen{
+                display: block;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" media="screen and (max-width: 768px)"
+          href="mobile.css">
 </head>
 <body>
-<h1>Šimon Krejčí</h1>
+<div class="big" id="widescreen">Widescreen</div>
+<div class="big" id="normal">normal</div>
+<div class="big" id="tablet">tablet</div>
+<div class="big" id="smartphone">smartphone</div>
+<div class="big" id="landscape">landscape</div>
 </body>
 </html>
