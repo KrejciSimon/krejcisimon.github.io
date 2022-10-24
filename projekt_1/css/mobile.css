@@ -1,0 +1,70 @@
+.box {
+    float: none;
+    width: 100%;
+}
+
+#contact-info .box {
+    border-bottom: #ddd dotted 1px;
+}
+
+#home-info.info-img{
+    display: 100%;
+}
+
+#home-info .info-content {
+    float: none;
+    width: 100%;
+}
+
+#navbar .logo {
+    float: none;
+    text-align: center;
+}
+
+#navbar ul,
+#navbar ul li{
+    float: none;
+}
+
+#navbar ul li a {
+    padding: 5px;
+    border-bottom: #dddddd dotted 1px;
+}
+
+#showcase {
+    background: url("../img/lazce.jpg") no-repeat center center/cover;
+    height: 900px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 0%;
+
+    min-height: 100%;
+}
+
+#about-info .info-right {
+    float: right;
+    width: 100%;
+    min-height: 100%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 100%;
+    min-height: 100%;
+}
+
+#testimonials {
+    height: 900px;
+    background: url("../img/azce 66 66 (1).png");
+
+    padding-top: 100px;
+}
+
+#testimonials h2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 2em;
+}
