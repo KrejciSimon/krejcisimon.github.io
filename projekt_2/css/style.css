@@ -5,10 +5,32 @@
 }
 
 body {
-    background: eee;
+    background: #eee;
     font-family: 'Comfortaa', cursive;
 
 }
+
+.bg-light {
+    background-color: #f4f4f4;
+    color: #333333;
+
+}
+
+.bg-dark {
+    background-color: #333333;
+    color: #fff;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom:  #aaa dotted 1px;
+}
+
 
 #logo {
     font-size: large;
@@ -23,14 +45,115 @@ p {
     margin: 0.75rem 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    letter-spacing: 1rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #93cb52;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px
+}
+
+.source {
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #aaa;
+    margin: 10px 20px;
+}
+
+.btn:hover {
+    background-color: #f7c08a;
+}
+
+.source a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2.5rem 0;
+}
+
+.py-3 {
+    padding: 3.5rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2.5rem;
+}
+
+.p-3 {
+    padding: 3.5rem;
+}
+
+.m-1 {
+    margin: 1.5rem;
+}
+
+.m-2 {
+    margin: 2.5rem;
+}
+
+.m-3 {
+    margin: 3.5rem;
+}
+
 #navbar {
     background: #333333;
     color: #fff;
     display: flex;
-    flex-wrap: ;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    z-index: 2;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 #navbar ul {
@@ -55,14 +178,50 @@ p {
     border-radius: 50px;
 }
 
-#navbar {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+#showcase {
+    background: url("../img/black-forest-7018959_1920.jpg") no-repeat center center/cover;
+    height: 100vh;
+
 }
 
-#showcase {
-    background: #333333 url("https://source.unsplash.com/random/?cat") no-repeat center center/cover;
-    height: 100 vh;
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: grba(0,0,0,0.4);
+    color: white;
+}
 
+#about .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#about .item {
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+}
+
+#about .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#project {
+    display: flex;
+}
+
+#project div {
+    flex: 1;
+}
+
+#project .project-img {
+    background: url("https://source.unsplash.com/random/?people")no-repeat center center/cover;
 }
