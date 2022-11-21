@@ -21,6 +21,10 @@ body {
     color: #fff;
 }
 
+.bg-primary {
+    background: #93cb52;
+}
+
 .list {
     margin: 0.5rem 0;
     list-style: none;
@@ -225,3 +229,37 @@ a {
 #project .project-img {
     background: url("https://source.unsplash.com/random/?people")no-repeat center center/cover;
 }
+
+#images .items{
+    display: flex;
+    justify-content: block;
+    margin: auto;
+    width: 80%;
+}
+
+#contact {
+    display: flex;
+}
+
+#contact div {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label{
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 50%;
+    padding:0.5rem;
+}
+
+#contact h3 {
+    margin-top: 1rem;
+}
+
