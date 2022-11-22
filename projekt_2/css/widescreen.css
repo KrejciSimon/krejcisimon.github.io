@@ -1,0 +1,10 @@
+#about .items .item {
+    display: flex;
+    text-align: left;
+}
+
+#about .items .item i {
+    align-self: center;
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+}

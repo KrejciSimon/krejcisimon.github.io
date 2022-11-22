@@ -157,7 +157,6 @@ a {
     top: 0;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
 }
 
 #navbar ul {
@@ -196,7 +195,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
-    background-color: grba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.4);
     color: white;
 }
 
@@ -232,9 +231,13 @@ a {
 
 #images .items{
     display: flex;
-    justify-content: block;
+    justify-content: space-between;
+}
+
+#project .items img{
     margin: auto;
     width: 80%;
+    display: block;
 }
 
 #contact {
@@ -255,11 +258,18 @@ a {
 
 #contact .contact-form input,
 #contact .contact-form textarea {
-    width: 50%;
-    padding:0.5rem;
+    width: 100%;
+    padding:0.4rem;
 }
 
+
+
 #contact h3 {
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+#main-footer {
+    display: flex;
+    height: 100px;
 }
 
