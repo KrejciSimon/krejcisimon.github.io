@@ -67,3 +67,30 @@
     }
 
 }
+
+@media screen and (max-height: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    #navbar #hambac {display: block}
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        display: none;
+    }
+
+    #navbar ul li {
+        padding: 0.5rem;
+        border-bottom: #f4f4f4 1px dotted;
+    }
+
+    #navbar ul li:first-child {
+        margin-top: 0.8rem;
+        border-top: #f4f4f4 1px dotted;
+    }
+}
+
