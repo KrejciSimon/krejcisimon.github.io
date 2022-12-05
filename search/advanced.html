@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="icon" href="./img/icon-title.svg">
+    <link rel="icon" href="./img/Google-Logo-PNG-HD-Quality.png">
     <link rel="stylesheet" href="./cs/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
 
 <body>
 <nav id="navigation_bar">
+    <a href="https://www.google.cz/?hl=cs"><img src="./img/d2abd662597191.5a9589b09ddf5.jpg"></a>
     <ul>
         <li><a href="index.html"><span class="text-primary2">Search</span></a></li>
         <li><a href="images.html"><span class="text-primary2">Images</span></a></li>
@@ -29,14 +30,14 @@
             <label for="any">Any of these words:</label>
             <label for="none">None of these words:</label>
         </div>
-        <div class="inputs">
-            <input type="text" id="all">
-            <input type="text" id="exact">
-            <input type="text" id="any">
-            <input type="text" id="none">
-        </div>
+        <form action="https://google.com/search" class="inputs">
+            <input type="text" id="all" name="as_q">
+            <input type="text" id="exact" name="as_epq">
+            <input type="text" id="any" name="as_oq">
+            <input type="text" id="none" name="as_eq">
+            <input type="submit" value="Advanced search" class="buttonn" id="advanced-button">
+        </form>
     </div>
-    <a href="#" class="buttonn">Search</a>
 </section>
 </body>
 </html>
