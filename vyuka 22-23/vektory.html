@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Vektory</title>
+    <script>
+        // Pouze, pokud je celá stránka (DOM) načtena, spustím funkci (běh programu)
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Vyplním si hodnoty, ať to nemusím pokaždé dělat
+            document.querySelector('#ax').value = -6;
+            document.querySelector('#ay').value = 2;
+            document.querySelector('#bx').value = 0;
+            document.querySelector('#by').value = 5;
+            document.querySelector('#cx').value = -6;
+            document.querySelector('#cy').value = 2;
+            document.querySelector('#dx').value = -4;
+            document.querySelector('#dy').value = -2;
+
+            // Jakmile provedu submit (odeslání) spustím funkci
+            document.querySelector('form').onsubmit = () => {
+
+                // Načtu hodnoty do proměnných, ať s nimi může počítač pracovat
+                let ax = document.querySelector('#ax').value;
+                let ay = document.querySelector('#ay').value;
+                let bx = document.querySelector('#bx').value;
+                let by = document.querySelector('#by').value;
+                let cx = document.querySelector('#cx').value;
+                let cy = document.querySelector('#cy').value;
+                let dx = document.querySelector('#dx').value;
+                let dy = document.querySelector('#dy').value;
+
+                // Výpočet
+                let delkau = (Math.sqrt((bx - ax)*(bx - ax)+(by - ay)*(by - ay))).toFixed(2);
+                let delkav = (Math.sqrt((dx - cx)*(dx - cx)+(dy - cy)*(dy - cy))).toFixed(2);
+                let soucin = (bx - ax) * (dx - cx) + (by - ay) * (dy - cy);
+                let odchylka = soucin / delkau * delkav;
+                let odchylkastupne = (Math.acos(odchylka*180/Math.PI))*()
+                let odchylkastupne = Math.acos(odchylka)*(180/Math.PI);
+
+                // Výstup
+                document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau}`;
+                document.querySelector("#delkav").innerHTML = `Délka vektoru v: ${delkav}`;
+                document.querySelector("#soucet").innerHTML = `Součet vektorů u a v: (${(bx - ax) + (dx - cx)}, ${(by - ay)+(dy - cy)})`;
+                document.querySelector("#rozdil").innerHTML = `Rozdíl vektorů u a v: (${(bx - ax) - (dx - cx)},${(by - ay)-(dy-cy)})`;
+                document.querySelector("#soucin").innerHTML = `Skalární součin vektorů u a v: ${soucin}`;
+                document.querySelector("#odchylka").innerHTML = `Odchylka vektorů u a v: ${odchylka}°`;
+
+
+                // Stop form from submitting
+                return false;
+            }
+
+
+
+
+
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+
+<form>
+    A:
+    <input type="number"
+           name="ax"
+           id="ax"
+           placeholder="x">
+    <input type="number"
+           name="ay"
+           id="ay"
+           placeholder="y"><br>
+    B:
+    <input type="number"
+           name="bx"
+           id="bx"
+           placeholder="x">
+    <input type="number"
+           name="by"
+           id="by"
+           placeholder="y">
+    <input type="submit"
+           value="Vypočítat" id="submit">
+    C:
+    <input type="number"
+           name="cx"
+           id="cx"
+           placeholder="x">
+    <input type="number"
+           name="cy"
+           id="cy"
+           placeholder="y">
+    <input type="submit"
+           value="Vypočítat" id="submit">
+    D:
+    <input type="number"
+           name="dx"
+           id="dx"
+           placeholder="x">
+    <input type="number"
+           name="dy"
+           id="dy"
+           placeholder="y">
+    <input type="submit"
+           value="Vypočítat" id="submit">
+</form>
+
+<p><div id="delkau"></div></p>
+<p><div id="delkav"></div></p>
+<p><div id="soucet"></div></p>
+<p><div id="rozdil"></div></p>
+<p><div id="soucin"></div></p>
+<p><div id="odchylka"></div></p>
+
+
+</body>
+</html>
