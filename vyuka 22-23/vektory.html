@@ -33,20 +33,19 @@
                 let dy = document.querySelector('#dy').value;
 
                 // Výpočet
-                let delkau = (Math.sqrt((bx - ax)*(bx - ax)+(by - ay)*(by - ay))).toFixed(2);
-                let delkav = (Math.sqrt((dx - cx)*(dx - cx)+(dy - cy)*(dy - cy))).toFixed(2);
+                let delkau = (Math.sqrt((bx - ax)*(bx - ax)+(by - ay)*(by - ay)));
+                let delkav = (Math.sqrt((dx - cx)*(dx - cx)+(dy - cy)*(dy - cy)));
                 let soucin = (bx - ax) * (dx - cx) + (by - ay) * (dy - cy);
-                let odchylka = soucin / delkau * delkav;
-                let odchylkastupne = (Math.acos(odchylka*180/Math.PI))*()
+                let odchylka = soucin / (delkau * delkav);
                 let odchylkastupne = Math.acos(odchylka)*(180/Math.PI);
 
                 // Výstup
-                document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau}`;
-                document.querySelector("#delkav").innerHTML = `Délka vektoru v: ${delkav}`;
-                document.querySelector("#soucet").innerHTML = `Součet vektorů u a v: (${(bx - ax) + (dx - cx)}, ${(by - ay)+(dy - cy)})`;
-                document.querySelector("#rozdil").innerHTML = `Rozdíl vektorů u a v: (${(bx - ax) - (dx - cx)},${(by - ay)-(dy-cy)})`;
-                document.querySelector("#soucin").innerHTML = `Skalární součin vektorů u a v: ${soucin}`;
-                document.querySelector("#odchylka").innerHTML = `Odchylka vektorů u a v: ${odchylka}°`;
+                document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau.toFixed(2)}`;
+                document.querySelector("#delkav").innerHTML = `Délka vektoru v: ${delkav.toFixed(2)}`;
+                document.querySelector("#soucet").innerHTML = `Součet vektorů u a v: (${(bx - ax) + (dx - cx)},${(by - ay)+(dy - cy)})`;
+                document.querySelector("#rozdil").innerHTML = `Rozdíl vektorů u a v: (${(bx - ax) - (dx - cx)},${(by - ay)-(dy - cy)})`;
+                document.querySelector("#soucin").innerHTML = `Skalární součin vektoru u a v: ${soucin}`;
+                document.querySelector("#odchylka").innerHTML = `Odchylka vektorů u a v: ${odchylkastupne.toFixed(2)}°`;
 
 
                 // Stop form from submitting
