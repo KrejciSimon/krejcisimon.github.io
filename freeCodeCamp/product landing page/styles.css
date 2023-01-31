@@ -1,7 +1,9 @@
 /** global element styling **/
 
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
-
+img {
+    background: darkseagreen;
+}
 * {
     margin: 0;
     padding: 0;
