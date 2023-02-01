@@ -1,141 +1,141 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <title>P. L. P.</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-          crossorigin="anonymous"
-  />
+    <title>P. L. P.</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity=""
+            crossorigin="anonymous"
+    />
 </head>
 <body>
 <div id="page-wrapper">
-  <header id="header">
-    <div class="logo">
-      <img
-              id="header-img"
-              src="https://github.com/KrejciSimon/krejcisimon.github.io/blob/main/freeCodeCamp/product%20landing%20page/photo/kisspng-bus-car-3d-computer-graphics-3d-modeling-coach-bus-5a88d191cf0304.8515629215189159858479.jpg?raw=true"
-              alt="original trombones logo"
-      />
+    <header id="header">
+        <div class="logo">
+            <img
+                    id="header-img"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                    alt="original trombones logo"
+            />
+            Rubikovy kostky
+        </div>
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Výhody</a></li>
+                <li><a class="nav-link" href="#how-it-works">Jak to funguje</a></li>
+                <li><a class="nav-link" href="#pricing">Ceny</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container"></div>
+
+    <section id="hero">
+        <h2>Ručně vyrobeny, dlouholeté zkušenosti</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="Vložte svou emailovou adresu"
+                    required
+            />
+            <input id="submit" type="submit" value="Začít" class="btn"/>
+        </form>
+    </section>
+
+    <div class="container">
+        <section id="features">
+            <div class="grid">
+                <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+                <div class="desc">
+                    <h2>Prémiové materiály</h2>
+                    <p>
+                        Naše kostky používají to nejpevnější dřevo na trhu.
+                    </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+                <div class="desc">
+                    <h2>Rychlé doručení</h2>
+                    <p>
+                        Nejen díky její velikosti ale také díky Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. A accusamus.
+                    </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                </div>
+                <div class="desc">
+                    <h2>Kvalita na prvním místě</h2>
+                    <p>
+                        V naší dětské továrně dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis cumque, dicta
+                        illum nobis quidem repellendus voluptatum. Assumenda at autem, consectetur corporis eos hic
+                        laudantium minus modi quisquam, voluptates, voluptatibus!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <iframe
+                    id="video"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/XVmBCfgQYCg"
+                    frameborder="0"
+                    allowfullscreen
+            ></iframe>
+        </section>
+        <section id="pricing">
+            <div class="product" id="tenor">
+                <div class="level">Kostka basic</div>
+                <h2>$600</h2>
+                <ol>
+                    <li>Jednobarevná</li>
+                    <li>Nelze otáčet</li>
+                    <li>Možnost si vybrat barvu</li>
+                    <li>Vhodné pro děti od 3 let</li>
+                </ol>
+                <button class="btn">Vybrat</button>
+            </div>
+            <div class="product" id="bass">
+                <div class="level">Kostka average</div>
+                <h2>$900</h2>
+                <ol>
+                    <li>Dvoubarevná</li>
+                    <li>Lze otáčet/skládat</li>
+                    <li>Pro dospělé od 19ti let</li>
+                    <li>Bez záruky</li>
+                </ol>
+                <button class="btn">Vybrat</button>
+            </div>
+            <div class="product" id="valve">
+                <div class="level">Kostka gamer</div>
+                <h2>$1200</h2>
+                <ol>
+                    <li>Tří a vícebarevná</li>
+                    <li>Lze otáčet přes kontinuální červí díru</li>
+                    <li>Pouze pro 40ti leté osoby</li>
+                    <li>Doživotní záruka</li>
+                </ol>
+                <button class="btn">Vybrat</button>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">Soukromí</a></li>
+                <li><a href="#">Podmínky</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <span>Copyright 2023, Original Rubic Cubes</span>
+        </footer>
     </div>
-
-    <nav id="nav-bar">
-      <ul>
-        <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-        <li><a class="nav-link" href="#pricing">Pricing</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="container"></div>
-
-  <section id="hero">
-    <h2>Handcrafted, home-made masterpieces</h2>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input
-              name="email"
-              id="email"
-              type="email"
-              placeholder="Enter your email address"
-              required
-      />
-      <input id="submit" type="submit" value="Get Started" class="btn" />
-    </form>
-  </section>
-
-  <div class="container">
-    <section id="features">
-      <div class="grid">
-        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-        <div class="desc">
-          <h2>Premium Materials</h2>
-          <p>
-            Our trombones use the shiniest brass which is sourced locally.
-            This will increase the longevity of your purchase.
-          </p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-        <div class="desc">
-          <h2>Fast Shipping</h2>
-          <p>
-            We make sure you recieve your trombone as soon as we have
-            finished making it. We also provide free returns if you are not
-            satisfied.
-          </p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="icon">
-          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-        </div>
-        <div class="desc">
-          <h2>Quality Assurance</h2>
-          <p>
-            For every purchase you make, we will ensure there are no damages
-            or faults and we will check and test the pitch of your
-            instrument.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="how-it-works">
-      <iframe
-              id="video"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-              frameborder="0"
-              allowfullscreen
-      ></iframe>
-    </section>
-    <section id="pricing">
-      <div class="product" id="tenor">
-        <div class="level">Tenor Trombone</div>
-        <h2>$600</h2>
-        <ol>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="bass">
-        <div class="level">Bass Trombone</div>
-        <h2>$900</h2>
-        <ol>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum.</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="valve">
-        <div class="level">Valve Trombone</div>
-        <h2>$1200</h2>
-        <ol>
-          <li>Plays similar to a Trumpet</li>
-          <li>Great for Jazz Bands</li>
-          <li>Lorem ipsum dolor.</li>
-          <li>Lorem ipsum.</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-    </section>
-    <footer>
-      <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <span>Copyright 2016, Original Trombones</span>
-    </footer>
-  </div>
 </div>
 </body>
 </html>
