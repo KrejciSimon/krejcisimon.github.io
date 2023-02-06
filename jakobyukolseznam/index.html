@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+</head>
+<body>
+<header id="main-header">
+    <div class=container>
+        <h1><i class="fa-solid fa-copy"></i> Kalendář akcí Suché Lazce</h1>
+        <h3><i class="fa-solid fa-clipboard"></i> by: Šimon Krejčí</h3>
+    </div>
+</header>
+<section id="timeline">
+    <ul>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 11.2. od (8:00) hodin.</h3>
+                <p>Zabíjačkové hody 2023, pořádá obecní úřad Suché Lazce</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 18.2. od (8:00) hodin.</h3>
+                <p>Mládež Suchých Lazců pořádá 14. ročník Pochování Basy s tradičním voděním medvěda po obci.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 25.2. od (8:03) hodin.</h3>
+                <p>Sucholazecký dětský bazárek v kulturním domě</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i>5.4. od (9:00) hodin.</h3>
+                <p>Přistavění kontejnerů na zelený odpad. </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i>6.4. od (17:00) hodin.</h3>
+                <p>Bezplatná právní poradna na Obecním úřadě Suché Lazce.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i>23.4. od (8:00) hodin.</h3>
+                <p>Od 8:00 hodin proběhne na Strážnici v areálu střelnice, 38. ročník soutěže ve střelbě z malorážky "O pohár osvobození Suchých Lazců 2023" pořádá AVZO. </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 3.5. od (9:00) hodin.</h3>
+                <p>Přistavění kontejnerů na zelený odpad.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 20.5. od (8:00) hodin.</h3>
+                <p>Na obecním hřišti proběhne Český pohár ve střelbě z polní kuše. Pořádá klub polní kuše Suché Lazce. </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 28.5. od (9:00) hodin.</h3>
+                <p>Od 9:00 hodin v areálu střelnice na Strážnici, "8. ročník - Nohejbalový turnaj trojic, amatérských družstev 2023" Suché Lazce, pořádá AVZO.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 7.6.: od (9:00) hodin.</h3>
+                <p>Přistavění kontejnerů na zelený odpad. </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa-solid fa-location-arrow"></i> 8.6.: od (17:00) hodin.</h3>
+                <p>Bezplatná právní poradna na Obecním úřadě Suché Lazce.</p>
+            </div>
+        </li>
+    </ul>
+</section>
+<script>
+    const items = document.querySelectorAll("#timeline li");
+
+    const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    const run = () =>
+        items.forEach((item) => {
+            if (isInViewport(item)) {
+                item.classList.add("show");
+            } else if (item.classList.contains("show")) {
+                item.classList.remove("show");
+            }
+        });
+
+    // Events
+    window.addEventListener("load", run);
+    window.addEventListener("resize", run);
+    window.addEventListener("scroll", run);
+
+</script>
+</body>
+</html>
