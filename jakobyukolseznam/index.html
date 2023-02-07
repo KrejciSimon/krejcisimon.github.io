@@ -105,8 +105,6 @@
         items.forEach((item) => {
             if (isInViewport(item)) {
                 item.classList.add("show");
-            } else if (item.classList.contains("show")) {
-                item.classList.remove("show");
             }
         });
 
@@ -114,6 +112,7 @@
     window.addEventListener("load", run);
     window.addEventListener("resize", run);
     window.addEventListener("scroll", run);
+
 
 </script>
 </body>
