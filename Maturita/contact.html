@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakty🧷</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+          href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px" href="css/mobile.css">
+    <meta name="description" content="Vítejte .....">
+    <meta name="keywords" content="vesnice, opava, suché lazce, sedlinka, přerovecká,,,,,klíčová slova">
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Suché Lazce</a></h1>
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="service.html"> Služby </a></li>
+                <li><a href="about.html"> O nás </a></li>
+                <li><a href="park.html"> Vozový park </a></li>
+                <li><a class="current" href="contact.html"> Kontakt </a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="contact-form" class="py-3 bg-light">
+    <div class="container">
+        <h2 class="l-heading"><span class="text-primary">Napište</span> nám</h2>
+        <p>Prosíme vyplňtě níže uvedený formulář</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Jméno</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Zpráva</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div>
+                <button class="btn" type="submit">Odeslat</button>
+            </div>
+        </form>
+
+
+    </div>
+
+</section>
+<section id="contact-info" class="bg-dark">
+    <div class="box bg-dark">
+        <i class="fas fa-hotel fa-3x"></i>
+        <h3>Adresa O.U. a PSČ</h3>
+        <p>Přerovecká 21, 747 95</p>
+    </div>
+
+    <div class="box bg-dark">
+        <i class="fas fa-phone fa-3x"></i>
+        <h3>Telefon</h3>
+        <p> 734 763 998 </p>
+    </div>
+
+    <div class="box bg-dark">
+        <i class="fas fa-envelope fa-3x"></i>
+        <h3>Email</h3>
+        <p>info@suchelazce.cz</p>
+    </div>
+</section>
+
+<div class="clr"></div>
+<footer id="main-footer" class="bg-dark">
+    <p>Inter BUS &copy; 2024</p>
+</footer>
+</body>
+</html>
