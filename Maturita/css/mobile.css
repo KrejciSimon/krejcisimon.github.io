@@ -8,7 +8,11 @@
 }
 
 #home-info.info-img{
-    display: 100%;
+    display: flex;
+    float: left;
+    width: 50%;
+
+    min-height: 100%;
 }
 
 #home-info .info-content {

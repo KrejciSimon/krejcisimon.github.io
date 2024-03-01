@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakty🧷</title>
+    <title>Kontakty 🎫</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -32,19 +32,38 @@
 
 <section id="contact-form" class="py-3 bg-light">
     <div class="container">
-        <h2 class="l-heading"><span class="text-primary">Napište</span> nám</h2>
-        <p>Potřebujete poradit s vaší cestou? Neváhejte nám napsat!</p>
+        <h2 class="l-heading"><span class="text-primary">Rezervace</span> </h2>
+        <p>Rezervujte si vaši cestu ještě dnes</p>
         <form>
             <div class="form-group">
                 <label for="name">Jméno</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="Zadejte Vaše jméno a příjmení">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" placeholder="Zadejte Váš email">
             </div>
             <div class="form-group">
-                <label for="message">Zpráva</label>
+                <label for="departure">Odjezd z:</label>
+                <input type="text" name="departure" id="departure" placeholder="Zadejte adresu">
+            </div>
+
+            <div class="form-group">
+                <label for="arrival">Příjezd do:</label>
+                <input type="text" name="arrival" id="arrival" placeholder="Zadejte adresu">
+            </div>
+            <div class="form-group">
+                <label for="date">Datum</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="form-group">
+                <label for="vehicle">Požadované vozidlo</label>
+                <select name="vehicle" required>
+                    <option value="" disabled selected hidden>Vyberte si vozidlo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Poznámka k rezervaci:</label>
                 <textarea name="message" id="message" maxlength="255"></textarea>
             </div>
             <div>
@@ -81,7 +100,7 @@
 
 <div class="clr"></div>
 <footer id="main-footer" class="bg-dark">
-    <p>Inter BUS &copy; 2024</p>
+    <p>Inter BUS &copy; 2024 <br> ZMP - Krejčí</p>
 </footer>
 </body>
 </html>

@@ -16,6 +16,7 @@
     clear: both;
 }
 
+
 .primary-color {
     color: orange;
 }
@@ -68,6 +69,7 @@ p {
 .bg-light {
     background: #f4f4f4;
     color: #333;
+
 }
 
 .btn-light {
@@ -147,6 +149,7 @@ p {
     background: url("../img/mezimestske-autobusy-lion-s-intercity-man(1)1.png")
     no-repeat center center/cover;
     height: 600px;
+
 }
 
 #showcase .showcase-content {
@@ -167,9 +170,10 @@ p {
 }
 
 #showcase .showcase-content a {
-    color: greenyellow;
+    color: orange;
     text-align: center;
     padding-top: 20px;
+    -webkit-text-stroke: 0.5px black;
 }
 
 #showcase .showcase-content h2 {
@@ -189,8 +193,7 @@ a {
 #home-info .info-img {
     float: left;
     width: 50%;
-    background: url("../img/man-bus-lions-coach-stage-16-9_width_1600_height_900.jpg")
-    no-repeat center center/cover;
+
     min-height: 100%;
 }
 
