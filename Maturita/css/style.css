@@ -169,11 +169,16 @@ p {
     line-height: 1.7em;
 }
 
-#showcase .showcase-content a {
+#showcase .showcase-content p {
     color: orange;
     text-align: center;
     padding-top: 20px;
     -webkit-text-stroke: 0.5px black;
+}
+
+#showcase .showcase-content div {
+    background-color: white;
+    opacity: 5%;
 }
 
 #showcase .showcase-content h2 {
@@ -193,8 +198,8 @@ a {
 #home-info .info-img {
     float: left;
     width: 50%;
-
-    min-height: 100%;
+    position: sticky;
+    max-height: 100%;
 }
 
 #home-info .info-content {
